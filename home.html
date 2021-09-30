@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Bombay Shaving Company</title>
+    <link rel="icon" href="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/BSCLogo_copy.png?v=1626366943" type="image/gif">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Lato', sans-serif;
+        }
+        #mainhead{
+            width: 100%;
+            height: 90px;
+            margin-top: 15px;
+        }
+        #subhead{
+            width: 85%;
+            margin: 0px auto;
+            height: 100%;
+        }
+        #subhead{
+            display: grid;
+            grid-template-columns: 16% 2% 22% 22% 33% 5%;
+        }
+        .free{
+            padding: 14px;
+        }
+        .free img{
+            float: left;
+        }
+        .free p{
+            float: left;
+            font-size: 13px;
+            margin-top: 12px;
+        }
+        #search{
+            margin-top: 18px;
+            margin-left: 5px;
+            
+        }
+        #search input{
+            padding: 15px;
+            float: left;
+            width: 350px;
+            height: 12px;
+            background-color: rgb(240, 239, 239);
+            border: 0px;
+        }
+        #cart{
+            margin-top: 18px;
+            margin-left: 15px;
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            background-color: #006d98;
+        }
+        #cart img{
+            padding: 8px;
+        }
+        #menu{
+            margin-top: 0px;
+            width: 100%;
+            height: 45px;
+            background-image: linear-gradient(to right,#006d98,#006d98);
+        }
+        #menubar{
+            width: 70%;
+            margin-left: 15%;
+            height: 100%;
+        }
+        #menubar td{
+            padding: 10px 0 8px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 16px;
+            line-height: 21px;
+            color: white;
+        }
+        .bannerimage img{
+            width: 100%;
+            height: 350px;
+        }
+        #line1{
+            text-align: center;
+            font-size: 25px;
+            line-height: 29px;
+            margin: 30px 0px 30px 0px;
+        }
+        #circleimg{
+            display: grid;
+            grid-template-columns: 27% 15% 16% 15% 27%;
+        }
+        #circleimg img{
+            width: 130px;
+            margin: 0px 50px 30px 50px;
+        }
+        .bannerimg img{
+            width: 100%;
+            height: 360px;    
+            background-size: cover;
+        }
+        .prod {
+            display: grid;
+            grid-template-columns: 5% 18% 18% 18% 18% 18% 5%;
+            margin: 50px 0px 50px 0px;
+        }
+        .prod img{
+            margin-left: 30px;
+            width: 170px;
+            margin-bottom: 15px;
+        }
+        .prod p{
+            text-align: center;
+        }
+        .prod h4{
+            text-align: center;
+            color: red;
+            margin-top: 20px;
+        }
+        .prod button{
+            background-color: #006d98;
+            border: none;
+            padding: 5px;
+            width: 140px;
+            height: 28px;
+            color: white;
+            margin: 10px 0px 0px 60px;
+        }
+        .prod button:hover{
+            background-color: black;
+        }
+        .thead{
+            text-align: center;
+            margin: 60px 0px 40px 0px;
+            font-size: 26px;
+        }
+        #testimonial{
+            background-color: #006d98;
+            width: 600px;
+            border: 3px solid black;
+            margin-left: 28%;
+        }
+        #testimonial img{
+            margin-top: 20px;
+            width: 150px;
+            border-radius: 100px;
+            margin-left: 34%;
+            
+        }
+        #testimonial p{
+            color: white;
+            padding: 20px;
+            font-size: 16px;
+        }
+        #testimonial h4{
+            color: white;
+            text-align: center;
+            margin: 20px 0px;
+        }
+        #social{
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        #social img{
+            width: 337px;
+            margin-bottom: -5px;
+        }
+        #club{
+            display: grid;
+            grid-template-columns: 4% 46% 29% 15% 6%;
+        }
+        #club{
+            background-color: rgb(224, 224, 224);
+            padding: 3%;
+        }
+        #chead h3{
+            font-size: 25px;
+            line-height: 30px;
+        }
+        #chead p{
+            font-size: 17px;
+            line-height: 26px;
+        }
+        #form input{
+            margin: 10px 0px 0px 20px;
+            padding: 5px;
+            width: 300px;
+            height: 30px;
+            font-size: 18px;
+        }
+        #cbtn{
+            margin-top: 9px;
+            margin-left: 20px;
+        }
+        #cbtn button{
+            width: 150px;
+            height: 43px;
+            font-size: 22px;
+            color: white;
+            border: none;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainhead">
+        <div id="subhead">
+            <div id="mainlogo">
+                <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/BSCLogo_copy.png?v=1626366943"/>
+            </div>
+            <div id="blank1"></div>
+            <div class="free">
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Superfood_256x256_3a0018e1-6680-4d68-a7f2-2a447f47a1a7_small.png?v=1619342309%20width=" height="55px">
+                </div>
+                <p>
+                    <span>
+                        <b>ENRICHED</b>
+                        <br>
+                        <a> WITH SUPERFOODS</a>
+                    </span>
+                </p>
+            </div>
+            <div class="free">
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Delivery_1_256x256_6f07d7db-5945-47d1-aca3-2c97dad6914a_small.png?v=1619342296%20width=" height="55px">
+                </div>
+                <p>
+                    <span>
+                        <b>FREE SHIPPING</b>
+                        <br>
+                        ON ORDERS OVER ₹500
+                    </span>
+                </p>
+            </div>
+            <div id="search">
+                <form action="search">
+                    <input type="text" placeholder="Search store here...">
+                </form>
+            </div>
+            <div id="cart">
+                <img src="https://assets.webiconspng.com/uploads/2016/11/bag_shopping_icon_1608414.png" width="25px">
+            </div>
+        </div>
+    </div>
+
+    <div id="menu">
+        <div id="menubar">
+            <table>
+                <tr>
+                    <td>HOME</td>
+                    <td>SHAVE</td>
+                    <td>BEARD</td>
+                    <td>WOMEN & HAIR REMOVAL</td>
+                    <td>HAIR</td>
+                    <td>SKIN</td>
+                    <td>BATH</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="bannerimage">
+        <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/shave-care_900x.jpg?v=1626948942">
+    </div>
+    <p id="line1">Why Choose Us</p>
+    <div id="circleimg">
+        <div></div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/delivery_2f8af99f-8053-480d-b613-662aaf48b234_600x.png?v=1625586418" alt="">
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/SLS-and-paraben-free_92f0fa4f-40f5-433f-b6d8-53a72ff22532_600x.png?v=1625586454" alt="">
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/superfood_600x.png?v=1625586440" alt="">
+        </div>
+        <div></div>
+    </div>
+    <!--- 1 --->
+    <div class="bannerimg">
+        <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/shave-category-banner_1_900x.jpg?v=1625747695" alt="">
+    </div>
+    <div class="prod">
+        <div></div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/1_2_copy_295x.jpg?v=1628075017" alt="">
+            <p>Precision Safety Razor - Silver</p>
+            <h4>₹ 1,346</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/3SSR_af251170-e8bf-4aae-a1cd-85e2522235ea_295x.jpg?v=1625147598" alt="">
+            <p>Daily Shave Care Kit</p>
+            <h4>₹ 1,467</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/Card-2_12_e502d69f-b2f0-4aa5-a090-356ae9e0f795_295x.jpg?v=1627041925" alt="">
+            <p>Fitkari After Shave Gel</p>
+            <h4>₹ 221</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/Option-1_295x.jpg?v=1625134143" alt="">
+            <p>Silver Razor 6 Part Shaving Kit</p>
+            <h4>₹ 2,696</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/Charcoal_295x.jpg?v=1622106813" alt="">
+            <p>Charcoal Shaving Foam</p>
+            <h4>₹ 245</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div></div>
+    </div>
+    <!--- 2 --->
+    <div class="bannerimg">
+        <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/beard-categpry-banner_1_900x.jpg?v=1625747540" alt="">
+    </div>
+    <div class="prod">
+        <div></div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/kits-65_295x.jpg?v=1623655817" alt="">
+            <p>Beard Care Kit</p>
+            <h4>₹ 650</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/pc_4.2e00fcbb8c32_5ec839c1-af3b-491b-8975-f2644c08a774_295x.jpg?v=1622106727" alt="">
+            <p>Beard Growth Oil</p>
+            <h4>₹ 345</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/pc_1_83242003-8a94-4202-a465-508d58aabe10_295x.jpg?v=1625569969" alt="">
+            <p>Beard Straightener Kit</p>
+            <h4>₹ 980</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/81oC_EBEKiL_1430053f-de87-405d-b7fb-c8c6a66e013d_295x.jpg?v=1622106729" alt="">
+            <p>Beard Oil</p>
+            <h4>₹ 295</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/1_1_12c628d7-df89-4ad8-bffe-d5281ab0b2e9_295x.jpg?v=1622492565" alt="">
+            <p>Beard Maintainance Kit</p>
+            <h4>₹ 1,503</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div></div>
+    </div>
+    <!--- 3 --->
+    <div class="bannerimg">
+        <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/skin-categpry-banner_1_1000x.jpg?v=1625747788" alt="">
+    </div>
+    <div class="prod">
+        <div></div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/CFSK_295x.jpg?v=1625137705" alt="">
+            <p>Charcoal Facial Kit</p>
+            <h4>₹ 600</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/SKIN_Charcoal_FaceWash_45g_1.373570c53e18_087d79cc-b3ca-4550-b6ad-8475dac3a432_295x.jpg?v=1622106749" alt="">
+            <p>Charcoal Face Wash</p>
+            <h4>₹ 345</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/SKIN_Charcoal_FaceScrub_45g_1.b8e0dec8ffd7_d45acdce-ebfb-49a4-a355-9ceb27d9e978_295x.jpg?v=1622106748" alt="">
+            <p>Charcoal Face Scrub</p>
+            <h4>₹ 179</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/pc_1.92f0261b54c1_96979378-4431-4077-a9ec-8221d80e7c73_295x.jpg?v=1622106742" alt="">
+            <p>Beard And Bath Travel Kit</p>
+            <h4>₹ 192</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/CoffeeFaceWash_Listing1_8d136a17-ae1b-4c75-8b39-73c77fe0376f_295x.jpg?v=1622106812" alt="">
+            <p>Coffee Face Wash</p>
+            <h4>₹ 179</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div></div>
+    </div>
+    <!--- 4 --->
+    <div class="bannerimg">
+        <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/hair-categpry-banner_2e16d3d7-a423-4ce5-ae45-9dd8ce1e8eb3_1000x.jpg?v=1625758330" alt="">
+    </div>
+    <div class="prod">
+        <div></div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/pc_1_075b64c7-4758-495c-9f84-b75a52fe2bcd_295x.jpg?v=1622106781" alt="">
+            <p>Onion & Bhringraj Hair Growth Oil</p>
+            <h4>₹ 425</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/pc_1.6cecf911302e_1b65d66c-ddfb-4f65-9300-f1833886a9ff_295x.jpg?v=1622106782" alt="">
+            <p>Curry Leaves Anti Grying Hair Oil</p>
+            <h4>₹ 425</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/Card1_1_027857f8-5afd-421c-8110-a62d9fb5023d_295x.jpg?v=1622106795" alt="">
+            <p>Hair Growth Booster Oil</p>
+            <h4>₹ 1080</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/pc_1.b9aa200cb57c_010b6c72-996b-4e31-a3f2-743103a727ff_295x.jpg?v=1622106779" alt="">
+            <p>Advanced Castor Anti Hair Fall Oil</p>
+            <h4>₹ 425</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/pc_1.7906eea27264_3e7b88aa-ca69-4621-a933-8a179f89087d_295x.jpg?v=1622106785" alt="">
+            <p>Complete Hair Nourish Value Pack</p>
+            <h4>₹ 1053</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div></div>
+    </div>
+    <!--- 5 --->
+    <div class="bannerimg">
+        <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/bath-category-banner_50e4d5f7-88b6-47dd-9335-b90dc4f52e36_1000x.jpg?v=1625758850" alt="">
+    </div>
+    <div class="prod">
+        <div></div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/pc_2.117619515fe0_d3c28335-a549-48fa-836d-1ae6803664d0_295x.jpg?v=1622106761" alt="">
+            <p>Exfoliating Bath Soaps</p>
+            <h4>₹ 702</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/Bath_FBW_Charcoal_200_1.8b2c455ee9d6_3c808ead-d06c-4ca9-b1c8-861a77e315e0_295x.jpg?v=1622106750" alt="">
+            <p>Deep Clean Face & Body Wash</p>
+            <h4>₹ 345</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/Bath_Soap_Charcoal_125_1.1d6a56959772_7a833ac2-970d-4ef1-b19a-2e7c0d4751e9_295x.jpg?v=1622106737" alt="">
+            <p>Charcoal Bath Soap</p>
+            <h4>₹ 125</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/81fHq5ay2EL._SL1500_7c553e0e-dfc4-4c24-a61a-ff96afb8d6f7_295x.jpg?v=1622106738" alt="">
+            <p>Beard And Bath Travel Kit</p>
+            <h4>₹ 792</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/Bath_FBW_Menthol_200_1.0bfb54fb4b91_20277490-133e-45f4-aedb-48708e0d2f60_295x.jpg?v=1622106756" alt="">
+            <p>Refreshing Face & Body Wash</p>
+            <h4>₹ 245</h4>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div></div>
+    </div>
+
+    <div class="thead">
+        <p>Testimonial</p>
+    </div>
+    <div id="testimonial">
+        <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/HunkHarsh_copy_200x200.jpg?v=1619353633">
+        <p>Hey Dosto In This Video Hum Baat Karenge Easy Top Hair Hacks Every Boy and Men Should Know in Hindi. Hairstyle Hacks For boys and men, How to add volume Naturally hacks. Curly to smooth hair hacks at home and curly to straight hair, How to have Healthy hair, hair hacks for boys to Get Big Hair Volume. hair tricks for men and Boys. </p>
+        <h4>HUNK HURSH</h4>
+    </div>
+
+    <div class="thead">
+        <p>Let's Get Social</p>
+    </div>
+    <div id="social">
+        <div>
+            <img src="https://scontent.cdninstagram.com/v/t51.29350-15/242941888_279855837108718_7754197029011237299_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=p2Oe7q0qqEoAX_fuynZ&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=685dbd13f16027f1d0a7709213cb6b20&oe=6156B1F2">
+        </div>
+        <div>
+            <img src="https://scontent.cdninstagram.com/v/t51.29350-15/242930075_757265321686421_971845237175165466_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=e8PNpFjW02AAX_dv2Fu&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=9ab29f838f9a37a371dce63e7849afd9&oe=6157EFFF">
+        </div>
+        <div>
+            <img src="https://scontent.cdninstagram.com/v/t51.29350-15/242573641_909007063355623_830326588723098096_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=spbMxYMtm70AX-OliNy&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=c06c6647a27bb6e2d6901bb5c8ea7047&oe=6156F7EF">
+        </div>
+        <div>
+            <img src="https://scontent.cdninstagram.com/v/t51.29350-15/242827058_3028998430692291_3597331097836076513_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=olcvUpTm7vAAX_i_B-W&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=c66109c774d28520d9af007a78fa7760&oe=61577B6F">
+        </div>
+        <div>
+            <img src="https://scontent.cdninstagram.com/v/t51.2885-15/242901279_4347211558661607_4184903088173732609_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=KaC_N0B7Rd0AX-5xXT3&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=de9068dfc72a61002ee425d494e41e88&oe=61569032">
+        </div>
+        <div>
+            <img src="https://scontent.cdninstagram.com/v/t51.29350-15/242456928_611285940038293_1961997909530237811_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=8UxreykNPTQAX-YrBgD&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=35b6fb7c9e9c71636d878f5f28d602db&oe=6157ABF1">
+        </div>
+        <div>
+            <img src="https://scontent.cdninstagram.com/v/t51.29350-15/242232817_283412796662148_6668202277341918031_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=9DedPCMCKRgAX-rBX-9&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=06ddd2e95c106ae4b3138b5474e68da8&oe=615693EA">
+        </div>
+        <div>
+            <img src="https://scontent.cdninstagram.com/v/t51.29350-15/242162855_828419711129430_1747844943605749133_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=xHxK_k-E-NkAX9GZtq9&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=bc99064804edde0870f8cc7d6f251326&oe=615782D5">
+        </div>
+    </div>
+
+    <div id="club">
+        <div></div>
+        <div id="chead">
+            <h3>JOIN THE BSC CLUB</h3>
+            <p>Sign up to know all about our exclusive offers, new products and the latest Bombay Banter.</p>
+        </div>
+        <div id="form">
+            <form action="form">
+                <input type="text" placeholder="Email address">
+            </form>
+        </div>
+        <div id="cbtn">
+            <button type="button">SUBSCRIBE</button>
+        </div>
+        <div></div>
+    </div>
+    <div class="footer">
+        
+    </div>
+</body>
+</html>

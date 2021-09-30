@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart Bombay Shaving Company</title>
+    <link rel="icon" href="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/BSCLogo_copy.png?v=1626366943" type="image/gif">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+   <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Lato', sans-serif;
+        }
+        #first{
+            width: 100%;
+            height: 30px;
+            background-color: rgb(243, 243, 243);
+        }
+        #first p{
+            font-size: 14px;
+            line-height: 21px;
+            margin-top: 10px;
+            margin-left: 7%;
+            padding: 5px;
+        }
+        #cart{
+            width: 86%;
+            margin-left: 7%;
+        }
+        #cart p{
+            text-align: center;
+            margin: 30px 0px;
+        }
+        #table{
+            width: 100%;
+            height: 40px;
+            background-color: rgb(243, 243, 243);
+        }
+        #table th{
+            padding: 10px 0 8px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        .center{
+            text-align: center;
+        }
+        .right{
+            text-align: right;
+        }
+        #mycart > div{
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            margin-left: 5%;
+            margin-right: 5%;
+            border-bottom: 1px solid rgb(211, 211, 211);
+        }
+        img{
+            width: 110px;
+            margin-left: 30%;
+        }
+        #mycart .p_name{
+            text-align: center;
+            margin-top: 50px;
+            font-size: 20px;
+        }
+        #mycart .p_price{
+            margin-left: 50%;
+            margin-top: 50px;
+            font-size: 20px;
+        }
+        #checkout h4{
+            font-style: italic;
+            font-size: 16px;
+            line-height: 24px; 
+            margin-bottom: 20px;   
+            text-align: right;
+            margin-right: 10px;
+        }
+        #checkout{
+            width: 30%;
+            height: auto;
+            border: 1px solid rgb(211, 211, 211);
+            float: right;
+            margin: 20px 0px;
+        }
+        #amount .top_p{
+            padding: 20px;
+            margin-left: 80px;
+        }
+        #amountvalue{
+            padding: 20px;
+            margin-left: 80px;
+        }
+        #amount #amountvalue{
+            color: #444444;
+        }
+        #rupee{
+            color: #444444;
+        }
+        #coupon input[type=text]{
+            padding: 6px;
+            margin-top: 8px;
+           margin-left: 45px;
+            font-size: 17px;
+            border: 1px solid #444444;
+        }
+        #coupon button{
+            padding: 6px;
+            width: 80px;
+            height: 35px;
+            color: white;
+            margin-top: 8px;
+            margin-right: 10px;
+            background: #444444;
+            font-size: 17px;
+            border: none;
+            cursor: pointer; 
+            margin-left: -5px;
+        }
+        #checkout_btn1 button{
+            width: 90%;
+            margin-left: 5%;
+            padding: 7px;
+            font-size: 15px;
+            margin-top: 15px;
+            color: white;
+            background-color: #006d98;
+            border: 2px solid black;
+        }
+        #checkout_btn button{
+            width: 90%;
+            margin-left: 5%;
+            padding: 7px;
+            font-size: 15px;
+            margin-top: 15px;
+            margin-bottom:20px;
+            color: white;
+            background-color: #006d98;
+            border: 2px solid black;
+        }
+        .bottom_border {
+            display: grid;
+            grid-template-columns: 30% 30%;
+            
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="first">
+        <p>Home > Your Shopping Cart</p>
+    </div>
+    <div id="cart">
+        <p>Your cart</p>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>PRODUCT</th>
+                    <th class="center">PRICE</th>
+                </tr>
+            </thead>
+        </table>
+        <div id="mycart"></div>
+
+        <div id="checkout">
+            <div id="amount" class="bottom_border">
+                <h3 class="top_p">SUBTOTAL</h3>
+                <h3 id="amountvalue"></h3>
+            </div>
+    
+            <h4>Shipping & taxes calculated at checkout</h4>
+
+            <div id="coupon">
+                <input type="text" placeholder="Discount Code"/>
+                <button type="submit" class="go">APPLY</button>
+            </div>
+    
+            <div id="checkout_btn1">
+                <button class="checkout_button"onclick="location.href='pay1.html'"><strong> UPDATE CART</strong></button>
+            </div>
+    
+            <div id="checkout_btn">
+                <button class="checkout_button"onclick="location.href='pay1.html'"><strong> PROCEDE TO CHECKOUT</strong></button>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+
+<script>
+    let cart_data= JSON.parse(localStorage.getItem("prod_cart"))
+     console.log(cart_data)
+      var total=0;
+      cart_data.forEach(function(prod){
+          
+    let div= document.createElement("div")
+
+    
+    let prod_price=document.createElement("p");
+    prod_price.setAttribute('class', 'p_price');
+    prod_price.innerText=prod.price;
+
+    let prod_name=document.createElement("p")
+    prod_name.setAttribute('class', 'p_name');
+    prod_name.innerText=prod.name;
+
+    let image = document.createElement("img");
+    image.src=prod.image;
+    image.style.width="150px";
+
+    div.append(image ,prod_name,prod_price);
+
+
+
+      document.getElementById("mycart").append(div);
+      
+      total= total+ Number(prod.price);
+      
+    
+      });
+    document.getElementById("amountvalue").append(total)
+
+
+</script>
