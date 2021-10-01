@@ -20,6 +20,7 @@
             height: 90px;
             margin-top: 15px;
         }
+       
         #subhead{
             width: 85%;
             margin: 0px auto;
@@ -53,7 +54,7 @@
             background-color: rgb(240, 239, 239);
             border: 0px;
         }
-        #cart{
+        #hcart{
             margin-top: 18px;
             margin-left: 15px;
             width: 40px;
@@ -61,7 +62,7 @@
             border-radius: 4px;
             background-color: #006d98;
         }
-        #cart img{
+        #hcart img{
             padding: 8px;
         }
         #menu{
@@ -81,6 +82,17 @@
             padding-right: 30px;
             font-size: 16px;
             line-height: 21px;
+            color: white;
+        }
+        #menubar td:hover{
+            background-color: white;
+            color: #006d98;
+        }
+        a:hover{
+            color: #006d98;
+        }
+        a{
+            text-decoration: none; 
             color: white;
         }
         .bannerimage img{
@@ -207,6 +219,50 @@
             border: none;
             background-color: black;
         }
+        img:hover{
+            opacity: 0.8;
+        }
+
+
+        .footer{
+            width: 100%;
+            height: auto;
+            background-color: #006d98;
+        }
+        #footcontent{
+            width: 80%;
+            margin-left: 10%;
+            background-color: #006d98;
+            display: grid;
+            grid-template-columns: 30% 20% 25% 25%;
+        }
+        #footcontent h5{
+            margin-top: 50px;
+            color: white;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        #footcontent p{
+            color: white;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+        #bottomline{
+            width: 80%;
+            margin-left: 10%;
+            border: 0.5px dotted grey;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        #lastline{
+            margin-left: 10%;
+            font-size: 13px;
+            color: white;
+        }
+        #blank{
+            width: 100%;
+            height: 60px;
+        }
     </style>
 </head>
 <body>
@@ -224,7 +280,7 @@
                     <span>
                         <b>ENRICHED</b>
                         <br>
-                        <a> WITH SUPERFOODS</a>
+                        WITH SUPERFOODS
                     </span>
                 </p>
             </div>
@@ -245,7 +301,7 @@
                     <input type="text" placeholder="Search store here...">
                 </form>
             </div>
-            <div id="cart">
+            <div id="hcart">
                 <img src="https://assets.webiconspng.com/uploads/2016/11/bag_shopping_icon_1608414.png" width="25px">
             </div>
         </div>
@@ -255,9 +311,9 @@
         <div id="menubar">
             <table>
                 <tr>
-                    <td>HOME</td>
+                    <td class="beard" ><a href="home.html">HOME</a></td>
                     <td>SHAVE</td>
-                    <td>BEARD</td>
+                    <td class="beard" ><a href="beard.html">BEARD</a></td>
                     <td>WOMEN & HAIR REMOVAL</td>
                     <td>HAIR</td>
                     <td>SKIN</td>
@@ -405,13 +461,13 @@
         <div></div>
         <div>
             <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/pc_1_075b64c7-4758-495c-9f84-b75a52fe2bcd_295x.jpg?v=1622106781" alt="">
-            <p>Onion & Bhringraj Hair Growth Oil</p>
+            <p>Bhringraj Hair Growth Oil</p>
             <h4>₹ 425</h4>
             <button type="button">ADD TO CART</button>
         </div>
         <div>
             <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/products/pc_1.6cecf911302e_1b65d66c-ddfb-4f65-9300-f1833886a9ff_295x.jpg?v=1622106782" alt="">
-            <p>Curry Leaves Anti Grying Hair Oil</p>
+            <p>Curry Leaves Hair Oil</p>
             <h4>₹ 425</h4>
             <button type="button">ADD TO CART</button>
         </div>
@@ -530,7 +586,40 @@
         <div></div>
     </div>
     <div class="footer">
-        
+        <div id="footcontent">
+            <div>
+                <h5>PERSONAL GROOMING SOLUTIONS</h5>
+                <p>Men’s Solutions</p>
+                <p>Women’s Solutions</p>
+                <p>Corporate Solutions</p>
+                <p>Bombay Banter</p>
+                <p>Refund policy</p>
+                <p>Terms of Service</p>
+            </div>
+            <div>
+                <h5>POLICIES & HELP</h5>
+                <p>About Us</p>
+                <p>Terms of Use</p>
+                <p>Privacy</p>
+                <p>Returns</p>
+                <p>Shipping Policy</p>
+            </div>
+            <div>
+                <h5>CUSTOMER SERVICES</h5>
+                <a href="login.html"><p>Login</p></a>
+                <p>FAQ's</p>
+                <p>Contact Us</p>
+                <p>Track Your Order</p>
+            </div>
+            <div>
+                <h5>SOCIAL MEDIA</h5>
+            </div>
+        </div>
+        <div id="bottomline"></div>
+        <div id="lastline">
+            <p>© 2021 Bombay Shaving Company. All Rights Reserved.</p>
+        </div>
+        <div id="blank"></div>
     </div>
 </body>
 </html>

@@ -15,6 +15,86 @@
             padding: 0px;
             font-family: 'Lato', sans-serif;
         }
+        #mainhead{
+            width: 100%;
+            height: 90px;
+            margin-top: 15px;
+        }
+       
+        #subhead{
+            width: 85%;
+            margin: 0px auto;
+            height: 100%;
+        }
+        #subhead{
+            display: grid;
+            grid-template-columns: 16% 2% 22% 22% 33% 5%;
+        }
+        .free{
+            padding: 14px;
+        }
+        .free img{
+            float: left;
+        }
+        .free p{
+            float: left;
+            font-size: 13px;
+            margin-top: 12px;
+        }
+        #search{
+            margin-top: 18px;
+            margin-left: 5px;
+            
+        }
+        #search input{
+            padding: 15px;
+            float: left;
+            width: 350px;
+            height: 12px;
+            background-color: rgb(240, 239, 239);
+            border: 0px;
+        }
+        #hcart{
+            margin-top: 18px;
+            margin-left: 15px;
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            background-color: #006d98;
+        }
+        #hcart img{
+            padding: 8px;
+        }
+        #menu{
+            margin-top: 0px;
+            width: 100%;
+            height: 45px;
+            background-image: linear-gradient(to right,#006d98,#006d98);
+        }
+        #menubar{
+            width: 70%;
+            margin-left: 15%;
+            height: 100%;
+        }
+        #menubar td{
+            padding: 10px 0 8px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 16px;
+            line-height: 21px;
+            color: white;
+        }
+        #menubar td:hover{
+            background-color: white;
+            color: #006d98;
+        }
+        a:hover{
+            color: #006d98;
+        }
+        a{
+            text-decoration: none; 
+            color: white;
+        }
         #first{
             width: 100%;
             height: 35px;
@@ -89,12 +169,147 @@
             border: 2px solid black;
             margin-left: 42%;
             margin-top: 10px;
-            margin-bottom: 15px;
+            margin-bottom: 100px;
             cursor: pointer;
         }
+        #club{
+            display: grid;
+            grid-template-columns: 4% 46% 29% 15% 6%;
+        }
+        #club{
+            background-color: rgb(224, 224, 224);
+            padding: 3%;
+        }
+        #chead h3{
+            font-size: 25px;
+            line-height: 30px;
+        }
+        #chead p{
+            font-size: 17px;
+            line-height: 26px;
+        }
+        #form input{
+            margin: 10px 0px 0px 20px;
+            padding: 5px;
+            width: 300px;
+            height: 30px;
+            font-size: 18px;
+        }
+        #cbtn{
+            margin-top: 9px;
+            margin-left: 20px;
+        }
+        #cbtn button{
+            width: 150px;
+            height: 43px;
+            font-size: 22px;
+            color: white;
+            border: none;
+            background-color: black;
+        }
+        
+        .footer{
+            width: 100%;
+            height: auto;
+            background-color: #006d98;
+        }
+        #footcontent{
+            width: 80%;
+            margin-left: 10%;
+            background-color: #006d98;
+            display: grid;
+            grid-template-columns: 30% 20% 25% 25%;
+        }
+        #footcontent h5{
+            margin-top: 50px;
+            color: white;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        #footcontent p{
+            color: white;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+        #bottomline{
+            width: 80%;
+            margin-left: 10%;
+            border: 0.5px dotted grey;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        #lastline{
+            margin-left: 10%;
+            font-size: 13px;
+            color: white;
+        }
+        #blank{
+            width: 100%;
+            height: 60px;
+        }
+        #forgot{
+            margin-bottom: 100px;
+        }
     </style>
+    
 </head>
 <body>
+    <div id="mainhead">
+        <div id="subhead">
+            <div id="mainlogo">
+                <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/BSCLogo_copy.png?v=1626366943"/>
+            </div>
+            <div id="blank1"></div>
+            <div class="free">
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Superfood_256x256_3a0018e1-6680-4d68-a7f2-2a447f47a1a7_small.png?v=1619342309%20width=" height="55px">
+                </div>
+                <p>
+                    <span>
+                        <b>ENRICHED</b>
+                        <br>
+                        WITH SUPERFOODS
+                    </span>
+                </p>
+            </div>
+            <div class="free">
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Delivery_1_256x256_6f07d7db-5945-47d1-aca3-2c97dad6914a_small.png?v=1619342296%20width=" height="55px">
+                </div>
+                <p>
+                    <span>
+                        <b>FREE SHIPPING</b>
+                        <br>
+                        ON ORDERS OVER ₹500
+                    </span>
+                </p>
+            </div>
+            <div id="search">
+                <form action="search">
+                    <input type="text" placeholder="Search store here...">
+                </form>
+            </div>
+            <div id="hcart">
+                <img src="https://assets.webiconspng.com/uploads/2016/11/bag_shopping_icon_1608414.png" width="25px">
+            </div>
+        </div>
+    </div>
+
+    <div id="menu">
+        <div id="menubar">
+            <table>
+                <tr>
+                    <td class="beard" ><a href="home.html">HOME</a></td>
+                    <td>SHAVE</td>
+                    <td class="beard" ><a href="beard.html">BEARD</a></td>
+                    <td>WOMEN & HAIR REMOVAL</td>
+                    <td>HAIR</td>
+                    <td>SKIN</td>
+                    <td>BATH</td>
+                </tr>
+            </table>
+        </div>
+    </div>
     <div id="first">
         <p>Home > Create Account</p>
     </div>
@@ -109,6 +324,59 @@
             </form>
             <button id= 'signup-btn' type="submit" onclick="validate()">CREATE AN ACCOUNT</button>
         </div>
+    </div>
+
+    <div id="club">
+        <div></div>
+        <div id="chead">
+            <h3>JOIN THE BSC CLUB</h3>
+            <p>Sign up to know all about our exclusive offers, new products and the latest Bombay Banter.</p>
+        </div>
+        <div id="form">
+            <form action="form">
+                <input type="text" placeholder="Email address">
+            </form>
+        </div>
+        <div id="cbtn">
+            <button type="button">SUBSCRIBE</button>
+        </div>
+        <div></div>
+    </div>
+    <div class="footer">
+        <div id="footcontent">
+            <div>
+                <h5>PERSONAL GROOMING SOLUTIONS</h5>
+                <p>Men’s Solutions</p>
+                <p>Women’s Solutions</p>
+                <p>Corporate Solutions</p>
+                <p>Bombay Banter</p>
+                <p>Refund policy</p>
+                <p>Terms of Service</p>
+            </div>
+            <div>
+                <h5>POLICIES & HELP</h5>
+                <p>About Us</p>
+                <p>Terms of Use</p>
+                <p>Privacy</p>
+                <p>Returns</p>
+                <p>Shipping Policy</p>
+            </div>
+            <div>
+                <h5>CUSTOMER SERVICES</h5>
+                <a href="login.html"><p>Login</p></a>
+                <p>FAQ's</p>
+                <p>Contact Us</p>
+                <p>Track Your Order</p>
+            </div>
+            <div>
+                <h5>SOCIAL MEDIA</h5>
+            </div>
+        </div>
+        <div id="bottomline"></div>
+        <div id="lastline">
+            <p>© 2021 Bombay Shaving Company. All Rights Reserved.</p>
+        </div>
+        <div id="blank"></div>
     </div>
 </body>
 </html>
@@ -160,8 +428,8 @@
         
         if (Object.values(obj).length == 4){
             userData.push(obj);
-            localStorage.regUsersInternTheory = JSON.stringify(userData);
-            alert('SignUp Successful');
+            localStorage.regUsers = JSON.stringify(userData);
+            alert('Created Account Successful');
             window.location.href = 'login.html';
         }
     }

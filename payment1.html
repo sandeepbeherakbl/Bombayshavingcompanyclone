@@ -18,13 +18,107 @@
         body{
             background-color: gray;
         }
+        #main {
+            width: 350px;
+            margin: 8% auto;
+            box-shadow: 0px 11px 15px -7px rgb(0 0 0 / 20%), 0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
+        }
+        #head {
+            background-color: #006d98;
+            color: white;
+            font-size: 14px;
+            padding: 5% 5%;
+        }
+        #language {
+            background-color: #014e6d;
+            color: rgb(238, 235, 235);
+            font-size: 12px;
+            padding: 10px 15px;
+        }
+        #new_card_box {
+            padding: 15px;
+            background-color: white;
+        }
+        #card_data button{
+            width: 97%;
+            height: 50px;
+            background-color: white;
+            border: 1px solid rgb(219, 219, 219);
+            font-size: 16px;
+            text-align: left;
+        }
+        #card_data button p{
+            margin-left: 60px;
+        }
+        #cancel {
+            float: right;
+            color: white;
+            border: none;
+            background-color: #006d98;
+            padding: 0px;
+        }
+        #money {
+            font-weight: 400;
+            font-size: 30px;
+        }
+        #new_card_heading{
+            margin-bottom: 15px;
+        }
+        
     </style>
 </head>
 <body>
-    
+    <div id="main">
+        <div id="content">
+            <div id="head">
+                <div id="heading">
+                    <button onclick="location.href='cart.html'" id="cancel">X</button>
+                    <h2>Bombay Shaving Company</h2>
+                    <p>Bombay Shaving Company - #21351916929178</p>
+                    <div id="money"></div>
+                </div>
+            </div>
+            <div id="language">
+                <h4>English</h4>
+            </div>
+            <div id="new_card_box">
+                <div id="new_card_heading">
+                    <h5>CARDS, UPI & MORE</h5>
+                </div>
+                <div id="card_data">
+                    <button type="button" ><a style="text-decoration: none; color: black;" href="finalpay.html">
+                        <p>Card<p>
+                        <p>Credit/Debit Card</p>
+                    </a>
+                    </button>
+                    <button type="button">
+                        <p>UPI/QR</p>
+                        <p>Google pay, phonepe & more</p>
+                    </button>
+                    <button type="button">
+                        <p>Net Banking</p>
+                        <p>All Indian Bank</p>
+                    </button>
+                    <button type="button">
+                        <p>Wallet</p>
+                        <p>phonepe & more</p>
+                    </button>
+                    <button type="button">
+                        <p>EMI</p>
+                        <p>Cards,Walnut 369 & ZestMoney</p>
+                    </button>
+                    <button type="button">
+                        <p>Pay Later</p>
+                        <p>Simpl & More</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 
 <script>
-
+    var pay_money = localStorage.getItem("final_cost");
+    document.getElementById("money").innerHTML = "₹" + "  " + pay_money;
 </script>

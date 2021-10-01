@@ -64,6 +64,36 @@
         #cart img{
             padding: 8px;
         }
+        #menu{
+            margin-top: 0px;
+            width: 100%;
+            height: 45px;
+            background-image: linear-gradient(to right,#006d98,#006d98);
+        }
+        #menubar{
+            width: 70%;
+            margin-left: 15%;
+            height: 100%;
+        }
+        #menubar td{
+            padding: 10px 0 8px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 16px;
+            line-height: 21px;
+            color: white;
+        }
+        #menubar td:hover{
+            background-color: white;
+            color: #006d98;
+        }
+        a:hover{
+            color: #006d98;
+        }
+        a{
+            text-decoration: none; 
+            color: white;
+        }
         #bannerimg img{
             width: 100%;
         }
@@ -99,7 +129,6 @@
             width: 90%;
             margin-left: 5%;
             margin-bottom: 10px;
-            border: 1px solid red;
         }
         #online_p img:hover{
             opacity: 0.4;
@@ -112,7 +141,6 @@
             line-height: 29px;
             color: #444444;
             margin-bottom: 10px;
-            border: 1px solid red;
         }
         #online_p .p_price{
             width: 90%;
@@ -123,7 +151,6 @@
             color: #ff0000;
             font-weight: bold;
             margin-bottom: 10px;
-            border: 1px solid red;
         }
         .button{
             width: 90%;
@@ -136,10 +163,88 @@
             color: white;
             margin-left: 25%;
             margin-bottom: 20px;
-            border: 1px solid red;
         }
         .button:hover{
             background-color: black;
+        }
+        #club{
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 4% 46% 29% 15% 6%;
+        }
+        #club{
+            background-color: rgb(224, 224, 224);
+            padding: 3%;
+        }
+        #chead h3{
+            font-size: 25px;
+            line-height: 30px;
+        }
+        #chead p{
+            font-size: 17px;
+            line-height: 26px;
+        }
+        #form input{
+            margin: 10px 0px 0px 20px;
+            padding: 5px;
+            width: 300px;
+            height: 30px;
+            font-size: 18px;
+        }
+        #cbtn{
+            margin-top: 9px;
+            margin-left: 20px;
+        }
+        #cbtn button{
+            width: 150px;
+            height: 43px;
+            font-size: 22px;
+            color: white;
+            border: none;
+            background-color: black;
+        }
+        
+        .footer{
+            width: 100%;
+            height: auto;
+            background-color: #006d98;
+        }
+        #footcontent{
+            width: 80%;
+            margin-left: 10%;
+            background-color: #006d98;
+            display: grid;
+            grid-template-columns: 30% 20% 25% 25%;
+        }
+        #footcontent h5{
+            margin-top: 50px;
+            color: white;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        #footcontent p{
+            color: white;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+        #bottomline{
+            width: 80%;
+            margin-left: 10%;
+            border: 0.5px dotted grey;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        #lastline{
+            margin-left: 10%;
+            font-size: 13px;
+            color: white;
+        }
+        #blank{
+            width: 100%;
+            height: 60px;
+        }
+        #forgot{
+            margin-bottom: 100px;
         }
     </style>
 </head>
@@ -148,7 +253,6 @@
         <div id="subhead">
             <div id="mainlogo">
                 <a href="home.html"><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/BSCLogo_copy.png?v=1626366943"/></a>
-                
             </div>
             <div id="blank1"></div>
             <div class="free">
@@ -186,7 +290,21 @@
         </div>
     </div>
 
-    <div></div>
+    <div id="menu">
+        <div id="menubar">
+            <table>
+                <tr>
+                    <td class="beard" ><a href="home.html">HOME</a></td>
+                    <td>SHAVE</td>
+                    <td id="beard" ><a href="beard.html">BEARD</a></td>
+                    <td>WOMEN & HAIR REMOVAL</td>
+                    <td>HAIR</td>
+                    <td>SKIN</td>
+                    <td>BATH</td>
+                </tr>
+            </table>
+        </div>
+    </div>
     <div id="bannerimg">
         <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/collections/landing_top_desk_1x.4341ccdb2b73_2000x.jpg?v=1631039882">
     </div>
@@ -199,7 +317,59 @@
         </div>
         <div id="online_p"></div>
     </div>
-    
+
+    <div id="club">
+        <div></div>
+        <div id="chead">
+            <h3>JOIN THE BSC CLUB</h3>
+            <p>Sign up to know all about our exclusive offers, new products and the latest Bombay Banter.</p>
+        </div>
+        <div id="form">
+            <form action="form">
+                <input type="text" placeholder="Email address">
+            </form>
+        </div>
+        <div id="cbtn">
+            <button type="button">SUBSCRIBE</button>
+        </div>
+        <div></div>
+    </div>
+    <div class="footer">
+        <div id="footcontent">
+            <div>
+                <h5>PERSONAL GROOMING SOLUTIONS</h5>
+                <p>Men’s Solutions</p>
+                <p>Women’s Solutions</p>
+                <p>Corporate Solutions</p>
+                <p>Bombay Banter</p>
+                <p>Refund policy</p>
+                <p>Terms of Service</p>
+            </div>
+            <div>
+                <h5>POLICIES & HELP</h5>
+                <p>About Us</p>
+                <p>Terms of Use</p>
+                <p>Privacy</p>
+                <p>Returns</p>
+                <p>Shipping Policy</p>
+            </div>
+            <div>
+                <h5>CUSTOMER SERVICES</h5>
+                <a href="login.html"><p>Login</p></a>
+                <p>FAQ's</p>
+                <p>Contact Us</p>
+                <p>Track Your Order</p>
+            </div>
+            <div>
+                <h5>SOCIAL MEDIA</h5>
+            </div>
+        </div>
+        <div id="bottomline"></div>
+        <div id="lastline">
+            <p>© 2021 Bombay Shaving Company. All Rights Reserved.</p>
+        </div>
+        <div id="blank"></div>
+    </div>
 </body>
 </html>
 
