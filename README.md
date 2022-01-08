@@ -11,6 +11,7 @@ This website is basically a eCommerce website which have lot of products related
 
 Basically Bombay Shaving Company is an eCommerce web site. Which has a lots of option for men grooving and shaving products. As I have to clone this site alone it took me lot of time to frame the things I have to do. How to design the site? what all elements will present in it? what all functionality I will show in this site?
 
+ 
 I tried to implement a workflow where the user could do the following things:
 1. Landing page
 2. Login Page.
