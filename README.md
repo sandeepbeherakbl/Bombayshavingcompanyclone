@@ -1,6 +1,8 @@
 # Bombay Shaving Company Clone
 This project is made for educational purpose
 
+![logo](logo.png)
+
 ## About Us
 In the course of the second unit here at Masai School, we learned HTML and CSS along with JS DOM, Constructor functions, Prototype and Inheritance, the usage of local storage and client Server Model, Asynchronous Programming, and Promises.
 
@@ -24,4 +26,18 @@ This website is basically a eCommerce website which have lot of products related
 ## Glimes Of my project
 
 1. Landing Page
-![landing]()
+![landing](landing.jpeg)
+
+2. Login page
+![login](login.jpeg)
+
+3. Product Page
+![Prod](productt.jpeg)
+
+4. Cart page
+![cart](cart.jpeg)
+
+5. Payment Page
+![payment](payment.jpeg)
+
+
