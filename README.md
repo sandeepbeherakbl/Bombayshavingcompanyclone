@@ -26,18 +26,23 @@ This website is basically a eCommerce website which have lot of products related
 ## Glimes Of my project
 
 1. Landing Page
+
 ![landing](landing.jpeg)
 
 2. Login page
+
 ![login](login.jpeg)
 
 3. Product Page
+
 ![Prod](productt.jpeg)
 
 4. Cart page
+
 ![cart](cart.jpeg)
 
 5. Payment Page
+
 ![payment](payment.jpeg)
 
 
